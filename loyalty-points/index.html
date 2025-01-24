@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulah Rewards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Phone Number Check -->
+        <div id="page1" class="page active">
+            <div class="logo">MULAH</div>
+            <div class="content">
+                <h1>Hello,<br>Welcome!</h1>
+                <p class="subtitle">Check Your Loyalty Points & Rewards</p>
+                
+                <div class="form-group">
+                    <div class="phone-input">
+                        <span class="prefix">+60</span>
+                        <input type="tel" id="phoneNumber" placeholder="Enter your mobile number">
+                    </div>
+                    <span id="phoneError" class="error"></span>
+                </div>
+                <button onclick="checkPhoneNumber()">Check Loyalty Points</button>
+                
+                <div class="powered-by">
+                    Powered by MulahRewards.com
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2: User Details -->
+        <div id="page2" class="page">
+            <div class="logo">MULAH</div>
+            <div class="content">
+                <h2>Registration</h2>
+                <p class="subtitle">Please fill up your details.</p>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <span class="validation-message">*Please insert a name</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthday">Birthday</label>
+                    <div class="date-inputs">
+                        <input type="text" placeholder="DD" maxlength="2" id="birthdayDay">
+                        <input type="text" placeholder="MM" maxlength="2" id="birthdayMonth">
+                        <input type="text" placeholder="YYYY" maxlength="4" id="birthdayYear">
+                    </div>
+                    <span class="validation-message">*Please insert your birthday</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <span class="validation-message">*Please insert a valid email address</span>
+                    <label class="checkbox">
+                        <input type="checkbox" id="noEmail">
+                        No email address
+                    </label>
+                </div>
+
+                <button onclick="submitDetails()">Continue</button>
+
+                <div class="powered-by">
+                    Powered by MulahRewards.com
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Summary -->
+        <div id="page3" class="page">
+            <div class="logo">MULAH</div>
+            <div class="content">
+                <h2>Summary</h2>
+                <div class="summary">
+                    <div class="summary-item">
+                        <strong>Name:</strong>
+                        <span id="summaryName"></span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Phone:</strong>
+                        <span id="summaryPhone"></span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Email:</strong>
+                        <span id="summaryEmail"></span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Birthday:</strong>
+                        <span id="summaryBirthday"></span>
+                    </div>
+                </div>
+                <button onclick="startOver()">Start Over</button>
+                
+                <div class="powered-by">
+                    Powered by MulahRewards.com
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

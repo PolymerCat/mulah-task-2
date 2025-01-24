@@ -1,0 +1,16 @@
+{
+  "name": "loyalty-points-app",
+  "version": "1.0.0",
+  "description": "Loyalty Points Mobile Web App",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
